@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package types;
+option go_package = "github.com/aergoio/aergo/types";
+
+message PeerAddress {
+  // address is string representation of ip address or domain name.
+  string address = 1;
+  uint32 port = 2;
+  bytes peerID = 3;
+}

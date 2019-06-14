@@ -1,0 +1,1 @@
+protoc -I./aergo-protobuf/proto --python_out=plugins=grpc,paths=source_relative:./protobuf ./aergo-protobuf/proto/*.proto
